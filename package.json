@@ -1,0 +1,49 @@
+{
+  "name": "fornace-pi-models",
+  "version": "1.0.0",
+  "description": "Keeps Pi model metadata in sync with the authenticated Mantice catalog at llm.fornace.net",
+  "type": "module",
+  "license": "MIT",
+  "author": "Francesco Frapporti <effedue@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fornace/fornace-pi-models.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "mantice",
+    "models"
+  ],
+  "files": [
+    "extensions",
+    "src",
+    "tools",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "scripts": {
+    "test": "node test/load.mjs",
+    "snapshot": "node tools/refresh-snapshot.mjs",
+    "audit": "node tools/audit.mjs",
+    "audit:fornace-max": "node tools/audit-fornace-max-chain.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
