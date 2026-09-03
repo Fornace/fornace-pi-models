@@ -39,7 +39,7 @@
     "id": "eugeny-v6",
     "context_window": null,
     "max_output_tokens": 4096,
-    "owned_by": "alias:eugeny-v6"
+    "owned_by": "routing"
   },
   {
     "id": "fast",
@@ -81,6 +81,12 @@
     "id": "fornace-image",
     "context_window": 128000,
     "max_output_tokens": 32768,
+    "owned_by": "routing"
+  },
+  {
+    "id": "fornace-image-edit",
+    "context_window": null,
+    "max_output_tokens": 4096,
     "owned_by": "routing"
   },
   {
@@ -126,7 +132,25 @@
     "owned_by": "routing"
   },
   {
+    "id": "fornace-transcription",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "routing"
+  },
+  {
     "id": "fornace-video",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "routing"
+  },
+  {
+    "id": "fornace-video-dubbing",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "routing"
+  },
+  {
+    "id": "fornace-video-edit",
     "context_window": null,
     "max_output_tokens": 4096,
     "owned_by": "routing"
@@ -222,6 +246,12 @@
     "owned_by": "alias:fornace-image"
   },
   {
+    "id": "image-edit",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "alias:fornace-image-edit"
+  },
+  {
     "id": "image-high",
     "context_window": 65536,
     "max_output_tokens": 32768,
@@ -282,10 +312,28 @@
     "owned_by": "routing"
   },
   {
+    "id": "transcription",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "alias:fornace-transcription"
+  },
+  {
     "id": "video",
     "context_window": null,
     "max_output_tokens": 4096,
     "owned_by": "alias:fornace-video"
+  },
+  {
+    "id": "video-dubbing",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "alias:fornace-video-dubbing"
+  },
+  {
+    "id": "video-edit",
+    "context_window": null,
+    "max_output_tokens": 4096,
+    "owned_by": "alias:fornace-video-edit"
   },
   {
     "id": "vision",
