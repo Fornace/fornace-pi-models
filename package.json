@@ -21,6 +21,7 @@
     "src",
     "tools",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "pi": {
